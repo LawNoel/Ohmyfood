@@ -1,0 +1,151 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#logo img {
+    height: 25px;
+}
+
+/* ----------------------------------------------------- */
+
+#form {
+    background-color: #f2f2f2;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+#form_icon {
+    margin-right: 10px;
+    padding: 10px 0;
+}
+
+#form_loca {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(209, 209, 209);
+}
+
+#form_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+input[type="search"] {
+    border: none;
+    background-color: rgb(209, 209, 209);
+    font-weight: bold;
+    padding: 10px 0;
+    outline: none;
+}
+
+.form_btn {
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+    color: white;
+    background-size: 200%; 
+    border: none; 
+}
+
+.btn_bg {
+    background-image: linear-gradient(
+        to right,
+        #DA22FF,
+        #9733EE,
+        #DA22FF
+    );
+}
+
+/* ------------------------------------------------------ */
+#contenant {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 40px 0px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenant h2 {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.restau {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 6px rgb(233, 232, 232);
+}
+
+.restau_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.restau_info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.restau_text {
+    width: 60%;
+}
+
+.restau_text p, h4 {
+    margin: 12px 0px;
+    padding-left: 12px;
+}
+
+.restau_icon {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+/* ------------------------------------------------------------------- */
+
+#bas_de_page {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 0px 0px 20px 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.info_icon {
+    margin-right: 10px;
+}
