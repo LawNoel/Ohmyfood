@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -218,4 +221,9 @@ li {
 .info_icon {
     font-size: 15px;
     width: 18px;
+}
+
+#mail {
+    text-decoration: none;
+    color: white;
 }

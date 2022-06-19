@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
 
 body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -44,6 +47,7 @@ body {
 #restau_titre {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 #menu_entree {
@@ -152,4 +156,9 @@ li {
 .info_icon {
     font-size: 15px;
     width: 18px;
+}
+
+#mail {
+    text-decoration: none;
+    color: white;
 }
