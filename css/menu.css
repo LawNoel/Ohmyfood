@@ -66,6 +66,7 @@ h4 {
 
 #photo {
     width: 100%;
+    object-fit: cover;
 }
 
 #restau {
@@ -85,34 +86,64 @@ h4 {
     width: 100%;
 }
 
-.heart {
-    color: gray;
-    cursor: pointer;
-  }
-
-.heart:hover {
-    animation: fill 1s ease-in-out;
-    background: linear-gradient(to bottom, #9356dc, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  @keyframes fill {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
 .trait {
     width: 50px;
     border: 2px solid #99E2D0;
-
 }
 
-@keyframes fadein {
+/* ***********************************************  ANIMATION COEUR  *************************************************** */
+
+.heart {
+    font-size: 40px;
+    z-index: 99;
+    position: absolute;
+}
+
+.heart:hover {
+    animation: fill 1s ease-in-out 1s forwards;
+}
+
+.heart__bg {
+    font-size: 40px;
+    background-image: linear-gradient(
+        to bottom,
+        #FF79DA,
+        #9356DC
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fill {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* ************************************************  APPARITION DES MENUS  **************************************************** */
+
+@keyframes apparition {
     from {
       opacity: 0;
     }
@@ -123,17 +154,17 @@ h4 {
 
 #menu_entree {
     width: 90%;
-    animation: fadein 2s ease-in-out;
+    animation: apparition 2s ease-in-out;
 }
 
 #menu_plats {
     width: 90%;
-    animation: fadein 4s ease-in-out;
+    animation: apparition 4s ease-in-out;
 }
 
 #menu_desserts {
     width: 90%;
-    animation: fadein 6s ease-in-out;
+    animation: apparition 6s ease-in-out;
 }
 
 .restau_icon {
@@ -172,6 +203,7 @@ h4 {
     margin: 0 10px;
 }
 
+/* *************************************************  ANIMATION CHECK  ********************************************* */
 
 .check {
     display: flex;
@@ -221,6 +253,8 @@ h4 {
         transform: scale(1) rotate(360deg);
     }
 }
+
+/* ******************************************************  BOUTON COMMANDER  ************************************************** */
 
 .btn {
     border-radius: 50px;

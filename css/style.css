@@ -18,19 +18,43 @@ body {
     height: 25px;
 }
 
+/* ***************************************************** CHARGEMENT DE PAGE  ************************************************* */
+
 #loader {         
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center; 
-    color: #9356DC;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: rgba(128, 128, 128, 0.795);
+    background-image: linear-gradient(to top, #9356dc, #ff79da, #99e2d0);
+    animation: loader 1s ease-in-out 3s forwards;
     display: none;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+      }
+
+    25% {
+        opacity: 0.75;
+    }
+    
+    50% {
+        opacity: 0.5;
+      }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+      }
 }
 
 #loader i {
@@ -42,12 +66,12 @@ body {
     height: 200px;
     background-color: black;
     border-radius: 150px;
-    animation: chargetaille 2.5s ease-in-out, chargecolor 7.5s ease-in-out;
+    animation: rotation 2.5s ease-in-out, couleur 7.5s ease-in-out;
     transform: scale(1);
     opacity: 0; 
 }
 
-@keyframes chargetaille {
+@keyframes rotation {
 0% {
     transform: scale(1) rotate(0);
     opacity: 1;
@@ -67,7 +91,7 @@ body {
 }
 }
 
-@keyframes chargecolor {
+@keyframes couleur {
 5% {
     color: #9356DC;
 }
@@ -136,6 +160,11 @@ input[type="search"] {
     font-size: 16px;
     color: white;
     border: none; 
+}
+
+.form__btn:hover {
+    opacity: 0.8;
+    box-shadow: 4px 4px 4px black;
 }
 
 .btn__bg {
@@ -277,25 +306,51 @@ nav h2 {
 }
 
 .heart {
-    color: gray;
-    cursor: pointer;
-  }
+    font-size: 40px;
+    z-index: 99;
+    position: absolute;
+}
 
 .heart:hover {
-    animation: fill 1s ease-in-out;
-    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    animation: fill 1s ease-in-out 1s forwards;
+}
+
+.heart__bg {
+    font-size: 40px;
+    background-image: linear-gradient(
+        to bottom,
+        #FF79DA,
+        #9356DC
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
-  @keyframes fill {
+@keyframes fill {
     0% {
-      opacity: 0;
+        opacity: 1;
     }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
     100% {
-      opacity: 1;
+        opacity: 0;
     }
-  }
+}
 
 /* ------------------------------------------------------------------- */
 
