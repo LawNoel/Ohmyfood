@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
+
+@media screen and (min-width: 768px) and ( max-width: 959px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        box-sizing: border-box;
+        margin: 0;           
+    }
+
+    .entete {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .logo img {
+        height: 25px;
+    }
+
+    $darkgray: rgb(209, 209, 209);
+
+    .form {
+        background-color: #f2f2f2;
+        margin-top: 15px;
+        padding-bottom: 50px;
+        &_icon {
+            margin-right: 10px;
+            padding: 10px 0;
+        }
+
+        &_loca {
+            display: flex;
+            justify-content: center;
+            background-color: $darkgray;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 30px
+        }
+
+        &_btn {
+            border-radius: 50px;
+            padding: 15px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            &_bg {
+                background-image: linear-gradient(
+                    to bottom,
+                    #ff79da,
+                    #9356dc
+                );       
+            } 
+        }
+    }
+    
+    input[type="search"] {
+        border: none;
+        background-color: $darkgray;
+        font-weight: bold;
+        padding: 10px 0;
+        outline: none;
+    }
+
+    .fonction {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+        &_votrechoix {
+            display: flex;
+            border-radius: 25px;
+            box-shadow: 6px 6px 6px #e4e4e4;
+            background-color: #f2f2f2;
+            padding: 30px 0;
+            margin-bottom: 20px;
+            position: relative;
+            
+            &_num {
+                border: 1px solid;
+                border-radius: 25px;
+                color: white;
+                background-color: #9356dc;
+                padding: 5px 10px;
+                position: absolute;
+                left: -15px;
+                top: 25px;               
+            }
+
+            &_icon {
+                margin-left: 35px;
+                color: gray;
+            }
+
+            &_text {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .contenant {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        padding: 40px 0px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .restau {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 6px 6px 6px #e4e4e4;
+        position: relative;
+
+        &_img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;            
+        }
+
+        &_info {
+            display: flex;
+            justify-content: space-around;
+            width: 100%; 
+        }
+
+        &_text {
+            width: 60%;
+        }
+
+        &_icon {
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 20px;
+            font-size: 30px;           
+        }
+
+        &_nouveau {
+            position: absolute;
+            background-color: #99e2d0;
+            color: rgba(0, 0, 0, 0.596);
+            border-radius: 5px;
+            padding: 8px;
+            right: 15px;
+            top: 15px;
+        }
+    }
+
+    .bas_de_page {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(70, 70, 70);
+        color: white;
+        padding: 0px 0px 20px 20px;
+    }
+
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+            margin-bottom: 15px;           
+        }
+    }
+
+    .info_icon_text {
+        display: flex;
+    }
+    
+    .info_text {
+        margin-left: 10px;
+    }
+    
+    .info_icon {
+        font-size: 15px;
+        width: 18px;
+    }
+    
+    #mail {
+        text-decoration: none;
+        color: white;
+    }
+    
+}

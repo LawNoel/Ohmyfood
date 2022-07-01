@@ -2,34 +2,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
     box-sizing: border-box;
     margin: 0;
+    font-family: Roboto, sans-serif;
 }
+
+h1 {
+    font-family: Shrikhand, sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h4 {
+    margin: 10px 10px 0 10px;
+    font-size: 18px;
+
+}
+/* ********************************************* HEADER ************************************************** */
 
 #entete {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 20px;
+    padding: 18px 0;
 }
 
 #retour {
+    width: 10%;
+}
+
+#retour a {
     display: flex;
-    align-items: center;
-    width: 50%;
-    padding-left: 20px;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    font-size: 26px;
 }
 
 #logo {
-    width: 50%;
-    padding-right: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 #logo img {
-    height: 25px;
+    height: 30px;
 }
+
+/* ********************************************************* SECTION ************************************************ */
 
 #photo {
     width: 100%;
@@ -42,6 +75,8 @@ body {
     background-color: #f2f2f2;
     border-radius: 50px 50px 0 0;
     width: 100%;
+    position: relative;
+    margin-top: -50px;
 }
 
 #restau_titre {
@@ -50,16 +85,55 @@ body {
     width: 100%;
 }
 
+.heart {
+    color: gray;
+    cursor: pointer;
+  }
+
+.heart:hover {
+    animation: fill 1s ease-in-out;
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.trait {
+    width: 50px;
+    border: 2px solid #99E2D0;
+
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 #menu_entree {
     width: 90%;
+    animation: fadein 2s ease-in-out;
 }
 
 #menu_plats {
     width: 90%;
+    animation: fadein 4s ease-in-out;
 }
 
 #menu_desserts {
     width: 90%;
+    animation: fadein 6s ease-in-out;
 }
 
 .restau_icon {
@@ -71,43 +145,81 @@ body {
 .repas {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
 }
 
 .repas_choix {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 70px;
     box-shadow: 6px 6px 6px #e4e4e4;
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+    position: relative;
 }
 
-
-p {
-    font-size: 16px;
-    margin: 0;
-}
-
-h4 {
-    margin: 0;
-    font-size: 20px;
-}
-
-.repas_choix_text {
-    width: 85%;
+.prix {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    margin: 0 10px;
 }
 
-.repas_choix_prix {
-    width: 15%;
+
+.check {
     display: flex;
-    align-items: flex-end;
-    font-weight: bold;
-    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    width:0%;
+    height:100%;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+
+
+.repas_choix:hover > .check {
+    width: 20%;
+    opacity: 1;
+    transform: translate(-100%);
+}
+
+.check > i {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    animation: turn 2s infinite;
+    transition: transform 500ms ease-in-out;
+    color: white;
+}
+
+@keyframes turn {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    25% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(1) rotate(0);
+    }
+    75% {
+        transform: scale(1) rotate(360deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
 }
 
 .btn {
@@ -120,6 +232,11 @@ h4 {
     border: none; 
 }
 
+.btn:hover {
+    opacity: 0.8;
+    box-shadow: 4px 4px 6px #000;
+}
+
 .btn_bg {
     background-image: linear-gradient(
         to bottom,
@@ -127,6 +244,8 @@ h4 {
         #9356dc
     );
 }
+
+/* ************************************************************** FOOTER***************************************** */
 
 #bas_de_page {
     display: flex;
