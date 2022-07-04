@@ -65,10 +65,12 @@
     .contenant h2 {
         width: 100%;
         margin-left: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .restau {
-        width: 45%;
+        width: 44%;
         display: flex;
         flex-direction: column;
         background-color: white;
