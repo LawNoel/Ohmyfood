@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
+
+@media screen and (min-width: 960px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        box-sizing: border-box;
+        margin: 0;           
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .fonction {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .fonction__votrechoix {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenant {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenant h2 {
+        width: 100%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .restau {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 6px 6px 6px #e4e4e4;
+        position: relative;
+    }
+}

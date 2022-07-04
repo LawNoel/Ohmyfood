@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
+
+@media screen and (min-width: 768px) and ( max-width: 959px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        margin: 0;           
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .fonction {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .fonction__votrechoix {
+       width: 30%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .fonction__votrechoix__num {
+        border: 1px solid;
+        border-radius: 25px;
+        color: white;
+        background-color: #9356dc;
+        padding: 5px 10px;
+        position: absolute;
+        left: -15px;
+        top: 35px;
+    }
+
+    .contenant {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenant h2 {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .restau {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 6px 6px 6px #e4e4e4;
+        position: relative;
+    }
+}

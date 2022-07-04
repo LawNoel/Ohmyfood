@@ -31,7 +31,7 @@ body {
     left: 0;
     z-index: 999;
     background-image: linear-gradient(to top, #9356dc, #ff79da, #99e2d0);
-    animation: loader 1s ease-in-out 3s forwards;
+    animation: loader 2s ease 2s forwards;
     display: none;
 }
 
@@ -54,7 +54,7 @@ body {
 
     100% {
         opacity: 0;
-      }
+    }
 }
 
 #loader i {
@@ -66,7 +66,7 @@ body {
     height: 200px;
     background-color: black;
     border-radius: 150px;
-    animation: rotation 2.5s ease-in-out, couleur 7.5s ease-in-out;
+    animation: rotation 3s ease, couleur 7s ease;
     transform: scale(1);
     opacity: 0; 
 }
@@ -115,7 +115,7 @@ body {
 }
 }
 
-/* ----------------------------------------------------- */
+/* ********************************************************** Formulaire ************************************************* */
 
 .form {
     background-color: #f2f2f2;
@@ -175,7 +175,7 @@ input[type="search"] {
     );
 }
 
-/* ------------------------------------------------------ */
+/* ********************************************************* Fonctionnement **************************************************** */
 
 nav {
     margin: 50px 0;
@@ -231,7 +231,7 @@ nav h2 {
 }
 
 
-/* ------------------------------------------------------ */
+/* ******************************************************** Restaurants *************************************************** */
 .contenant {
     width: 100%;
     height: auto;
@@ -245,7 +245,7 @@ nav h2 {
 
 .contenant h2 {
     align-self: flex-start;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .restau {
@@ -305,6 +305,8 @@ nav h2 {
     top: 15px;
 }
 
+/* **********************************************************  Animation coeur  ********************************************************** */
+
 .heart {
     font-size: 40px;
     z-index: 99;
@@ -352,7 +354,7 @@ nav h2 {
     }
 }
 
-/* ------------------------------------------------------------------- */
+/* ************************************************************ Footer  *********************************************** */
 
 .bas_de_page {
     display: flex;
