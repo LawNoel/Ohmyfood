@@ -17,29 +17,43 @@
         height: 40px;
     }
 
+    input[type="search"] {
+        border: none;
+        background-color: rgb(209, 209, 209);
+        font-weight: bold;
+        padding: 15px;
+        outline: none;
+        font-size: 20px;
+    }
+
+    #form__icon {
+        margin-right: 10px;
+        padding: 15px;
+    }
+
     .fonction {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .fonction__votrechoix {
-       width: 30%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-
     .fonction__votrechoix__num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
         border: 1px solid;
-        border-radius: 25px;
+        border-radius: 50%;
         color: white;
         background-color: #9356dc;
-        padding: 5px 10px;
         position: absolute;
         left: -15px;
-        top: 35px;
+        top: 25px;
+    }
+
+    .fonction__votrechoix__icon {
+        margin-left: 50px;
+        color: gray;
     }
 
     .contenant {

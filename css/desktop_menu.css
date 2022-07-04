@@ -72,17 +72,14 @@
 
     #menu_entree {
         width: 32%;
-        animation: apparition 2s ease-in-out;
     }
     
     #menu_plats {
         width: 32%;
-        animation: apparition 4s ease-in-out;
     }
     
     #menu_desserts {
         width: 32%;
-        animation: apparition 6s ease-in-out;
     }
 
     .repas_choix {
@@ -97,7 +94,6 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        transition: padding-right 450ms ease-in-out;
         position: relative;
     }
 }

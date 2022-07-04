@@ -32,12 +32,13 @@ body {
     z-index: 999;
     background-image: linear-gradient(to top, #9356dc, #ff79da, #99e2d0);
     animation: loader 2s ease 2s forwards;
-    display: none;
+    /* display: none; */
 }
 
 @keyframes loader {
     0% {
         opacity: 1;
+        visibility: visible;
       }
 
     25% {
@@ -54,6 +55,7 @@ body {
 
     100% {
         opacity: 0;
+        visibility: hidden;
     }
 }
 
@@ -206,11 +208,15 @@ nav h2 {
 }
 
 .fonction__votrechoix__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     border: 1px solid;
-    border-radius: 25px;
+    border-radius: 50%;
     color: white;
     background-color: #9356dc;
-    padding: 5px 10px;
     position: absolute;
     left: -15px;
     top: 25px;
@@ -221,7 +227,7 @@ nav h2 {
     color: gray;
 }
 
-.fonction__votrechoix__icon:hover {
+.fonction__votrechoix:hover > .fonction__votrechoix__icon {
     color: #9356dc;
 }
 
@@ -320,12 +326,20 @@ nav h2 {
 .heart__bg {
     font-size: 40px;
     background-image: linear-gradient(
-        to bottom,
+        to top,
         #FF79DA,
         #9356DC
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0;
+    scale: 0;
+    transition: scale 3s, opacity 3s;
+}
+
+.heart:hover + .heart__bg {
+    opacity: 1;
+    scale: 1.1;
 }
 
 @keyframes fill {

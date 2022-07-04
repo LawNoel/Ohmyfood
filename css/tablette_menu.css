@@ -66,6 +66,18 @@
         height: 40px;
     }
 
+    #menu_entree {
+        width: 100%;
+    }
+    
+    #menu_plats {
+        width: 100%;
+    }
+    
+    #menu_desserts {
+        width: 100%;
+    }
+
     .repas_choix {
         display: flex;
         flex-direction: column;
@@ -78,7 +90,6 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        transition: padding-right 450ms ease-in-out;
         position: relative;
     }
 

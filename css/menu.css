@@ -114,6 +114,14 @@ h4 {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0;
+    scale: 0;
+    transition: scale 3s, opacity 3s;
+}
+
+.heart:hover + .heart__bg {
+    opacity: 1;
+    scale: 1.1;
 }
 
 @keyframes fill {
@@ -148,25 +156,50 @@ h4 {
 @keyframes apparition {
     from {
       opacity: 0;
+      transform: translate(0,10px);
     }
     to {
       opacity: 1;
+      transform: translate(0,0);
     }
-  }
+}
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
 
 #menu_entree {
-    width: 90%;
-    animation: apparition 2s ease-in-out;
+    width: 100%;
 }
 
 #menu_plats {
-    width: 90%;
-    animation: apparition 4s ease-in-out;
+    width: 100%;
 }
 
 #menu_desserts {
+    width: 100%;
+}
+
+.repas_choix:nth-child(1) {
     width: 90%;
-    animation: apparition 6s ease-in-out;
+    animation: apparition 2s ease-in-out 300ms;
+}
+
+.repas_choix:nth-child(2) {
+    width: 90%;
+    animation: apparition 2s ease-in-out 600ms;
+}
+
+.repas_choix:nth-child(3) {
+    width: 90%;
+    animation: apparition 2s ease-in-out 900ms;
+}
+
+.repas_choix:nth-child(4) {
+    width: 90%;
+    animation: apparition 2s ease-in-out 1.2s;
 }
 
 .restau_icon {
@@ -177,6 +210,7 @@ h4 {
 .repas {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 15px;
 }
 
@@ -192,7 +226,6 @@ h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition: padding-right 450ms ease-in-out;
     position: relative;
 }
 
@@ -202,6 +235,12 @@ h4 {
     align-items: center;
     height: 50%;
     margin: 0 20px 0 10px;
+}
+
+.prix p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* *************************************************  ANIMATION CHECK  ********************************************* */
@@ -228,11 +267,14 @@ h4 {
     transform: translate(-100%);
 }
 
+.repas_choix:hover > .check > i {
+    transform: rotate(360deg);
+}
+
 .check > i {
     display: flex;
     align-items: center;
     font-size: 25px;
-    animation: turn 2s infinite;
     transition: transform 500ms ease-in-out;
     color: white;
 }
