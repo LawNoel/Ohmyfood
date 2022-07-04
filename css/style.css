@@ -32,7 +32,6 @@ body {
     z-index: 999;
     background-image: linear-gradient(to top, #9356dc, #ff79da, #99e2d0);
     animation: loader 2s ease 2s forwards;
-    /* display: none; */
 }
 
 @keyframes loader {
@@ -387,6 +386,11 @@ li {
     margin-bottom: 15px;
 }
 
+li a {
+    text-decoration: none;
+    color: white;
+}
+
 .info_icon_text {
     display: flex;
 }
@@ -398,9 +402,4 @@ li {
 .info_icon {
     font-size: 15px;
     width: 18px;
-}
-
-#mail {
-    text-decoration: none;
-    color: white;
 }

@@ -27,19 +27,24 @@
     }
     
     h4 {
-        margin: 15px 10px 0 15px;
         font-size: 24px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        padding-top: 20px;
     }
 
     #logo img {
         height: 50px;
     }
 
+    #photo {
+        width: 100%;
+        object-fit: cover;
+        height: 900px;
+    }
 
-    #restau {
+    .restau {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -50,9 +55,10 @@
         width: 100%;
         position: relative;
         margin-top: -25%;
+        cursor: pointer;
     }
 
-    #restau_titre {
+    .restau__titre {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -66,26 +72,24 @@
         font-size: 50px;
     }
 
-    .restau_icon {
+    .restau__icon {
         padding-left: 300px;
     }
 
-    #menu_entree {
-        width: 32%;
+    #menu__entree {
+        width: 50%;
     }
     
-    #menu_plats {
-        width: 32%;
+    #menu__plats {
+        width: 50%;
     }
     
-    #menu_desserts {
-        width: 32%;
+    #menu__desserts {
+        width: 50%;
     }
 
-    .repas_choix {
+    .repas__choix {
         display: flex;
-        flex-direction: column;
-        width: 100%;
         height: 100px;
         box-shadow: 6px 6px 6px #e4e4e4;
         margin-bottom: 15px;
@@ -95,5 +99,68 @@
         white-space: nowrap;
         overflow: hidden;
         position: relative;
+    }
+
+    .repas__choix:hover .repas__choix__prix {
+        padding-right: 15%;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .repas__choix__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    .repas__choix__prix {
+        display: flex;
+        align-items: flex-end;
+        width: 5%;
+        margin: 0 40px 15px 30px;
+        font-size: 24px;
+    }
+
+    .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:0%;
+        height:100%;
+        background-color: #99E2D0;
+        border-radius: 0 15px 15px 0;
+        opacity: 0;
+        transition: transform 500ms ease-in-out;
+        position: absolute;
+        top: 0;
+        right: -15%;
+    }
+    
+    .repas__choix:hover > .check {
+        width: 15%;
+        opacity: 1;
+        transform: translate(-100%, 0);
+    }
+
+    .check > i {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        transition: transform 500ms ease-in-out;
+        color: white;
+    }
+
+    .btn {
+        border-radius: 50px;
+        margin: 10% 50%;
+        padding: 15px 50px;
+        font-size: 16px;
+        transition: 0.5s;
+        color: white;
+        border: none; 
     }
 }

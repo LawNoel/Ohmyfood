@@ -20,18 +20,18 @@
     }
     
     p {
-        font-size: 20px;
+        font-size: 24px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
     
     h4 {
-        margin: 15px 10px 0 15px;
-        font-size: 22px;
+        font-size: 26px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        padding-top: 15px;
     }
 
     #entete {
@@ -66,23 +66,26 @@
         height: 40px;
     }
 
-    #menu_entree {
+    #menu__entree {
         width: 100%;
     }
     
-    #menu_plats {
+    #menu__plats {
         width: 100%;
     }
     
-    #menu_desserts {
+    #menu__desserts {
         width: 100%;
     }
 
-    .repas_choix {
+    .titre {
+        margin-left: 40px;
+    }
+
+    .repas__choix {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 90px;
+        width: 80%;
+        height: 110px;
         box-shadow: 6px 6px 6px #e4e4e4;
         margin-bottom: 15px;
         border-radius: 15px;
@@ -93,12 +96,57 @@
         position: relative;
     }
 
-    .prix {
+    .repas__choix:hover .repas__choix__prix {
+        padding-right: 15%;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .repas__choix__text {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    .repas__choix__prix {
+        display: flex;
+        align-items: flex-end;
+        width: 5%;
+        margin: 0 40px 20px 30px;
+        font-size: 24px;
+    }
+
+    .check {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        height: 50%;
-        margin: 0 25px 0 15px;
+        width:0%;
+        height:100%;
+        background-color: #99E2D0;
+        border-radius: 0 15px 15px 0;
+        opacity: 0;
+        transition: transform 500ms ease-in-out;
+        position: absolute;
+        top: 0;
+        right: -15%;
+    }
+    
+    .repas__choix:hover > .check {
+        width: 15%;
+        opacity: 1;
+        transform: translate(-100%, 0);
+    }
+
+    .check > i {
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        transition: transform 500ms ease-in-out;
+        color: white;
     }
 
     .heart {

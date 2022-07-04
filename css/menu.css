@@ -18,14 +18,18 @@ h3 {
 
 p {
     font-size: 16px;
+    height: 50%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin: 0;
 }
 
 h4 {
-    margin: 10px 10px 0 10px;
+    height: 50%;
     font-size: 18px;
+    margin: 0;
+    padding-top: 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -71,7 +75,7 @@ h4 {
     object-fit: cover;
 }
 
-#restau {
+.restau {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,16 +86,17 @@ h4 {
     margin-top: -50px;
 }
 
-#restau_titre {
+.restau__titre {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.trait {
-    width: 50px;
-    border: 2px solid #99E2D0;
+.restau__icon {
+    display: flex;
+    align-items: center;
 }
+
 
 /* ***********************************************  ANIMATION COEUR  *************************************************** */
 
@@ -164,47 +169,45 @@ h4 {
     }
 }
 
+#menu__entree {
+    width: 100%;
+}
+
+#menu__plats {
+    width: 100%;
+}
+
+#menu__desserts {
+    width: 100%;
+}
+
 .titre {
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
-#menu_entree {
-    width: 100%;
+.trait {
+    width: 50px;
+    border: 2px solid #99E2D0;
 }
 
-#menu_plats {
-    width: 100%;
-}
-
-#menu_desserts {
-    width: 100%;
-}
-
-.repas_choix:nth-child(1) {
+.repas__choix:nth-child(1) {
     width: 90%;
     animation: apparition 2s ease-in-out 300ms;
 }
 
-.repas_choix:nth-child(2) {
+.repas__choix:nth-child(2) {
     width: 90%;
     animation: apparition 2s ease-in-out 600ms;
 }
 
-.repas_choix:nth-child(3) {
+.repas__choix:nth-child(3) {
     width: 90%;
     animation: apparition 2s ease-in-out 900ms;
 }
 
-.repas_choix:nth-child(4) {
+.repas__choix:nth-child(4) {
     width: 90%;
     animation: apparition 2s ease-in-out 1.2s;
-}
-
-.restau_icon {
-    display: flex;
-    align-items: center;
 }
 
 .repas {
@@ -214,33 +217,37 @@ h4 {
     margin-top: 15px;
 }
 
-.repas_choix {
+.repas__choix {
     display: flex;
-    flex-direction: column;
-    width: 100%;
     height: 70px;
     box-shadow: 6px 6px 6px #e4e4e4;
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: white;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
     position: relative;
 }
 
-.prix {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50%;
-    margin: 0 20px 0 10px;
+.repas__choix:hover .repas__choix__prix {
+    padding-right: 10%;
+    transition: all 500ms ease-in-out;
 }
 
-.prix p {
-    text-overflow: ellipsis;
+.repas__choix__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    margin-left: 10px;
     white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.repas__choix__prix {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 8% 2% 0;
 }
 
 /* *************************************************  ANIMATION CHECK  ********************************************* */
@@ -254,20 +261,19 @@ h4 {
     background-color: #99E2D0;
     border-radius: 0 15px 15px 0;
     opacity: 0;
-    transition: transform 330ms ease-in-out;
+    transition: transform 500ms ease-in-out;
     position: absolute;
     top: 0;
-    right: -20%;
+    right: -15%;
 }
 
-
-.repas_choix:hover > .check {
-    width: 20%;
+.repas__choix:hover > .check {
+    width: 15%;
     opacity: 1;
-    transform: translate(-100%);
+    transform: translate(-100%, 0);
 }
 
-.repas_choix:hover > .check > i {
+.repas__choix:hover > .check > i {
     transform: rotate(360deg);
 }
 
