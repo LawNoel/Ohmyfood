@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1025px) {
     body {
         font-family: 'Roboto', sans-serif;
         font-size: 22px;
@@ -76,15 +76,7 @@
         padding-left: 300px;
     }
 
-    #menu__entree {
-        width: 50%;
-    }
-    
-    #menu__plats {
-        width: 50%;
-    }
-    
-    #menu__desserts {
+    .menu {
         width: 50%;
     }
 
@@ -102,7 +94,7 @@
     }
 
     .repas__choix:hover .repas__choix__prix {
-        padding-right: 15%;
+        padding-right: 70px;
         transition: all 500ms ease-in-out;
     }
     
@@ -121,7 +113,7 @@
         display: flex;
         align-items: flex-end;
         width: 5%;
-        margin: 0 40px 15px 30px;
+        margin: 0 50px 15px 30px;
         font-size: 24px;
     }
 
@@ -137,11 +129,11 @@
         transition: transform 500ms ease-in-out;
         position: absolute;
         top: 0;
-        right: -15%;
+        right: -90px;
     }
     
     .repas__choix:hover > .check {
-        width: 15%;
+        width: 90px;
         opacity: 1;
         transform: translate(-100%, 0);
     }

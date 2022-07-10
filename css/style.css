@@ -129,7 +129,7 @@ a {
     padding-bottom: 50px;
 }
 
-#form__icon {
+.form__loca__icon {
     margin-right: 10px;
     padding: 10px 0;
 }
@@ -140,7 +140,7 @@ a {
     background-color: rgb(209, 209, 209);
 }
 
-input[type="search"] {
+.form__loca__text {
     border: none;
     background-color: rgb(209, 209, 209);
     font-weight: bold;
@@ -160,7 +160,7 @@ input[type="search"] {
     margin: 0px 0px 30px 0px;
 }
 
-.form__btn {
+.btn {
     border-radius: 50px;
     padding: 15px;
     font-size: 16px;
@@ -168,7 +168,7 @@ input[type="search"] {
     border: none; 
 }
 
-.form__btn:hover {
+.btn:hover {
     opacity: 0.8;
     box-shadow: 4px 4px 4px black;
 }
@@ -183,11 +183,11 @@ input[type="search"] {
 
 /* ********************************************************* Fonctionnement **************************************************** */
 
-nav {
+.consigne {
     margin: 50px 0;
 }
 
-nav h2 {
+.consigne__titre {
     margin-left: 25px;
 }
 
@@ -253,12 +253,12 @@ nav h2 {
     align-items: center;
 }
 
-.contenant h2 {
+.contenant__titre {
     align-self: flex-start;
     margin-left: 30px;
 }
 
-.restau {
+.contenant__restau {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -282,21 +282,21 @@ nav h2 {
     width: 100%;
 }
 
-.restau__text {
+.restau__info__text {
     width: 60%;
 }
 
-.restau__text h4 {
+.restau__info__text h4 {
     margin: 12px 0px;
     padding-left: 12px;
 }
 
-.restau__text p {
+.restau__info__text p {
     margin-top: -5px;
     padding-left: 12px;
 }
 
-.restau__icon {
+.restau__info__icon {
     width: 40%;
     display: flex;
     justify-content: end;
@@ -374,7 +374,7 @@ nav h2 {
 
 /* ************************************************************ Footer  *********************************************** */
 
-.bas_de_page {
+.bas__de__page {
     display: flex;
     flex-direction: column;
     background-color: rgb(70, 70, 70);
@@ -396,15 +396,20 @@ li a {
     color: white;
 }
 
-.info_icon_text {
+.info__utile {
     display: flex;
 }
 
-.info_text {
+.info__utile__text {
     margin-left: 10px;
 }
 
-.info_icon {
+.info__utile__icon {
     font-size: 15px;
     width: 18px;
+}
+
+#mail {
+    text-decoration: none;
+    color: white;
 }

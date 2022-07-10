@@ -13,7 +13,7 @@
         height: 50px;
     }
 
-    input[type="search"] {
+    .form__loca__text {
         border: none;
         background-color: rgb(209, 209, 209);
         font-weight: bold;
@@ -22,7 +22,7 @@
         font-size: 22px;
     }
 
-    #form__icon {
+    .form__loca__icon {
         margin-right: 10px;
         padding: 20px;
     }

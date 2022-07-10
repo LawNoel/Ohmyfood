@@ -7,6 +7,11 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     font-family: Shrikhand, sans-serif;
 }
@@ -169,20 +174,12 @@ h4 {
     }
 }
 
-#menu__entree {
-    width: 100%;
-}
-
-#menu__plats {
-    width: 100%;
-}
-
-#menu__desserts {
+.menu {
     width: 100%;
 }
 
 .titre {
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .trait {
@@ -229,7 +226,7 @@ h4 {
 }
 
 .repas__choix:hover .repas__choix__prix {
-    padding-right: 10%;
+    padding-right: 60px;
     transition: all 500ms ease-in-out;
 }
 
@@ -247,7 +244,7 @@ h4 {
 .repas__choix__prix {
     display: flex;
     align-items: flex-end;
-    margin: 0 8% 2% 0;
+    margin: 0 30px 12px 20px;
 }
 
 /* *************************************************  ANIMATION CHECK  ********************************************* */
@@ -264,11 +261,11 @@ h4 {
     transition: transform 500ms ease-in-out;
     position: absolute;
     top: 0;
-    right: -15%;
+    right: -75px;
 }
 
 .repas__choix:hover > .check {
-    width: 15%;
+    width: 75px;
     opacity: 1;
     transform: translate(-100%, 0);
 }
@@ -330,7 +327,7 @@ h4 {
 
 /* ************************************************************** FOOTER***************************************** */
 
-#bas_de_page {
+.bas__de__page {
     display: flex;
     flex-direction: column;
     background-color: rgb(70, 70, 70);
@@ -347,15 +344,20 @@ li {
     margin-bottom: 15px;
 }
 
-.info_icon_text {
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.info__utile {
     display: flex;
 }
 
-.info_text {
+.info__utile__text {
     margin-left: 10px;
 }
 
-.info_icon {
+.info__utile__icon {
     font-size: 15px;
     width: 18px;
 }

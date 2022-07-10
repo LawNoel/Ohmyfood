@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap');
 
-@media screen and (min-width: 768px) and ( max-width: 959px) {
+@media screen and (min-width: 768px) and ( max-width: 1024px) {
     body {
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
@@ -66,20 +66,8 @@
         height: 40px;
     }
 
-    #menu__entree {
-        width: 100%;
-    }
-    
-    #menu__plats {
-        width: 100%;
-    }
-    
-    #menu__desserts {
-        width: 100%;
-    }
-
     .titre {
-        margin-left: 40px;
+        margin-left: 5%;
     }
 
     .repas__choix {
@@ -116,7 +104,7 @@
         display: flex;
         align-items: flex-end;
         width: 5%;
-        margin: 0 40px 20px 30px;
+        margin: 0 20px 20px 30px;
         font-size: 24px;
     }
 
