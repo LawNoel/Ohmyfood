@@ -62,14 +62,14 @@
         flex-wrap: wrap;
     }
 
-    .contenant h2 {
+    .contenant__titre {
         width: 100%;
         margin-left: 20px;
         display: flex;
         justify-content: center;
     }
 
-    .restau {
+    .contenant__restau {
         width: 44%;
         display: flex;
         flex-direction: column;

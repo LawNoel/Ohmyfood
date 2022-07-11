@@ -63,14 +63,14 @@
         justify-content: center;
     }
 
-    .contenant h2 {
+    .contenant__titre {
         width: 100%;
         margin-left: 20px;
         display: flex;
         justify-content: center;
     }
 
-    .restau {
+    .contenant__restau {
         width: 45%;
         display: flex;
         flex-direction: column;
