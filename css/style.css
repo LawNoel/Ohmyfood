@@ -337,7 +337,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    transition: scale 3s, opacity 3s;
+    transition: opacity 2s;
 }
 
 .heart:hover + .heart__bg {
