@@ -337,13 +337,11 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    scale: 0;
     transition: scale 3s, opacity 3s;
 }
 
 .heart:hover + .heart__bg {
     opacity: 1;
-    scale: 1.1;
 }
 
 @keyframes fill {

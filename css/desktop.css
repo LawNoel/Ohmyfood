@@ -27,6 +27,11 @@
         padding: 20px;
     }
 
+    .consigne__titre {
+        display: flex;
+        justify-content: center;
+    }
+
     .fonction {
         display: flex;
         flex-direction: row;
