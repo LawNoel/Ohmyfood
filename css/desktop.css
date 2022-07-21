@@ -15,7 +15,8 @@
 
     .form__loca__text {
         border: none;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(233, 233, 233);
+        box-shadow: 0 5px 5px -5px grey inset;
         font-weight: bold;
         padding: 20px;
         outline: none;
